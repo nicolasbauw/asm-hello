@@ -1,8 +1,5 @@
-all: hello.o
-	ld -s -o hello  hello.o
-
-hello.o:
-	as hello.s -o hello.o
+all:
+	gcc -s -o hello hello.s -nostdlib
 
 clean:
 	rm hello hello.o
